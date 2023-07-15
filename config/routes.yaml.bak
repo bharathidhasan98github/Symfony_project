@@ -1,0 +1,7 @@
+app_registration_register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index

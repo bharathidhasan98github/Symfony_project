@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <scrupt src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
+<script src="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap4.min.css"></script>
+  <style>
+  .bg-gradient-primary{
+    background-color:#4e73df;
+    background-size:cover
+    }
+    .shadow-lg{
+     //   box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important
+        }
+    .d-lg-block{
+        display:block!important
+    }
+    .bg-register-image{
+        background:url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+        background-position:center;background-size:cover
+        }
+    .my-5
+    {
+        margin-top:3rem!important
+    }
+    .o-hidden{
+        overflow:hidden!important
+    }
+    .border-0{
+        border:0!important
+    }
+    .card-body{
+        flex:1 1 auto;
+        min-height:1px;
+        padding:1.25rem;
+    }
+    .p-0{padding:0!important}
+    .d-none{display:none!important}
+    .p-5{padding:3rem!important}
+    .text-gray-900{color:#3a3b45!important}
+    h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
+  </style>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
